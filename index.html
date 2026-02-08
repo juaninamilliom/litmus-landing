@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Litmus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <canvas id="bg"></canvas>
+
+  <nav>
+    <a href="#" class="logo"><span class="logo-diamond">&#9670;</span> Litmus</a>
+    <div class="nav-right">
+      <a href="#protocol" class="nav-link">Protocol</a>
+      <a href="#" class="btn-launch">Launch App</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-tag">Multichain Trust Protocol</p>
+      <h1>Don't trust.<br><span class="glow">Verify.</span></h1>
+      <p class="hero-sub">On-chain reputation scoring, programmable escrow, and contract auditing. SUI / EVM / Solana.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn-primary">Launch App</a>
+        <a href="#protocol" class="btn-outline">Read Docs</a>
+      </div>
+    </div>
+    <div class="hero-ticker">
+      <div class="ticker-track">
+        <span>WALLETIQ</span><span class="ticker-dot"></span>
+        <span>AGENTESCROW</span><span class="ticker-dot"></span>
+        <span>RUGSHIELD</span><span class="ticker-dot"></span>
+        <span>SUI</span><span class="ticker-dot"></span>
+        <span>EVM</span><span class="ticker-dot"></span>
+        <span>SOLANA</span><span class="ticker-dot"></span>
+        <span>WALLETIQ</span><span class="ticker-dot"></span>
+        <span>AGENTESCROW</span><span class="ticker-dot"></span>
+        <span>RUGSHIELD</span><span class="ticker-dot"></span>
+        <span>SUI</span><span class="ticker-dot"></span>
+        <span>EVM</span><span class="ticker-dot"></span>
+        <span>SOLANA</span><span class="ticker-dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="stat">
+      <span class="stat-val">3</span>
+      <span class="stat-lbl">Chains</span>
+    </div>
+    <div class="stat">
+      <span class="stat-val">0</span>
+      <span class="stat-lbl">Trust Required</span>
+    </div>
+    <div class="stat">
+      <span class="stat-val">&lt;200ms</span>
+      <span class="stat-lbl">Scoring</span>
+    </div>
+    <div class="stat">
+      <span class="stat-val">100%</span>
+      <span class="stat-lbl">Open Source</span>
+    </div>
+  </section>
+
+  <!-- Protocol -->
+  <section class="protocol" id="protocol">
+    <div class="protocol-grid">
+
+      <div class="card card-cyan">
+        <div class="card-tag">Score</div>
+        <h3>WalletIQ</h3>
+        <p>Know who you're dealing with. Real-time wallet reputation across any chain.</p>
+        <div class="card-terminal">
+          <code><span class="dim">$</span> litmus score 0x1a2b...9f</code>
+          <code class="term-result"><span class="c-cyan">TRUSTED</span> <span class="dim">// score: 87</span></code>
+        </div>
+      </div>
+
+      <div class="card card-violet">
+        <div class="card-tag">Protect</div>
+        <h3>AgentEscrow</h3>
+        <p>Reputation-gated escrow. Terms adjust to trust. Disputes resolve fair.</p>
+        <div class="card-terminal">
+          <code><span class="dim">$</span> litmus escrow create --amount 5ETH</code>
+          <code class="term-result"><span class="c-violet">LOCKED</span> <span class="dim">// hold: 24h</span></code>
+        </div>
+      </div>
+
+      <div class="card card-green">
+        <div class="card-tag">Audit</div>
+        <h3>RugShield</h3>
+        <p>Scan contracts before you ape. Deployer rep + vulnerability detection.</p>
+        <div class="card-terminal">
+          <code><span class="dim">$</span> litmus audit 0x7c3f...</code>
+          <code class="term-result"><span class="c-green">CLEAN</span> <span class="dim">// findings: 0</span></code>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- How -->
+  <section class="how">
+    <h2>Score <span class="dim">&rarr;</span> Gate <span class="dim">&rarr;</span> Audit</h2>
+    <div class="flow">
+      <div class="flow-step">
+        <div class="flow-num">01</div>
+        <div class="flow-label">WalletIQ scores the counterparty</div>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-step">
+        <div class="flow-num">02</div>
+        <div class="flow-label">AgentEscrow sets terms by tier</div>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-step">
+        <div class="flow-num">03</div>
+        <div class="flow-label">RugShield checks the contract</div>
+      </div>
+    </div>
+    <div class="tier-bar">
+      <div class="tier t-risky">Risky<span>Blocked</span></div>
+      <div class="tier t-cautious">Cautious<span>50%</span></div>
+      <div class="tier t-standard">Standard<span>75%</span></div>
+      <div class="tier t-trusted">Trusted<span>100%</span></div>
+    </div>
+  </section>
+
+  <!-- Chains -->
+  <section class="chains">
+    <div class="chain active"><span>SUI</span></div>
+    <div class="chain"><span>EVM</span></div>
+    <div class="chain"><span>SOL</span></div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bottom-cta">
+    <h2>Ship with trust built in.</h2>
+    <div class="install-box">
+      <code>npm i @litmus/walletiq @litmus/escrow @litmus/rugshield</code>
+    </div>
+    <div class="bottom-actions">
+      <a href="#" class="btn-primary">Launch App</a>
+      <a href="#" class="btn-outline">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <span class="logo"><span class="logo-diamond">&#9670;</span> Litmus</span>
+    <div class="footer-links">
+      <a href="#">Docs</a>
+      <a href="#">GitHub</a>
+      <a href="#">Discord</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
